@@ -58,14 +58,27 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadDataFromCSV.cs" />
     <Compile Include="PrintEtiket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tyden1.cs">
+    <Compile Include="SummerWeeksForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tyden1.Designer.cs">
-      <DependentUpon>Tyden1.cs</DependentUpon>
+    <Compile Include="SummerWeeksForm.Designer.cs">
+      <DependentUpon>SummerWeeksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinterWeeksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinterWeeksForm.Designer.cs">
+      <DependentUpon>WinterWeeksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wweek2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wweek2.Designer.cs">
+      <DependentUpon>Wweek2.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -79,8 +92,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Tyden1.resx">
-      <DependentUpon>Tyden1.cs</DependentUpon>
+    <EmbeddedResource Include="SummerWeeksForm.resx">
+      <DependentUpon>SummerWeeksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinterWeeksForm.resx">
+      <DependentUpon>WinterWeeksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wweek2.resx">
+      <DependentUpon>Wweek2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

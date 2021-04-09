@@ -10,22 +10,18 @@ using System.Windows.Forms;
 
 namespace Etikety
 {
-    public partial class Form1 : Form
+    public partial class WinterWeeksForm : Form
     {
-        public Form1()
+        public WinterWeeksForm()
         {
             InitializeComponent();
         }
 
-        
-
-       
-
-        private void WinterBut_Click(object sender, EventArgs e)
+        private void wweek2but_Click(object sender, EventArgs e)
         {
-            WinterWeeksForm wwf = new WinterWeeksForm();
+            Wweek2 ww2 = new Wweek2();
             this.Hide();
-            wwf.ShowDialog();
+            ww2.ShowDialog();
         }
     }
 }
