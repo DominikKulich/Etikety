@@ -26,6 +26,11 @@ namespace Etikety
         {
             loadW2 = File.ReadAllLines(@"db/week2.txt").Skip(1).Select(x => LoadDataFromCSV.GetPrintData(x)).ToList();
             setDay.DataSource = loadW2.Select(x => x.Day).Distinct().ToArray();
+            var mycheckboxes = Controls.OfType<GroupBox>().SelectMany(groupBox => groupBox.Controls.OfType<CheckBox>());
+            foreach (CheckBox chbx in mycheckboxes)
+            {
+                chbx.Visible = false;
+            }
         }
 
         private void setDay_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,18 +46,27 @@ namespace Etikety
             string day = setDay.SelectedItem.ToString();
            
            
-
+                var mycheckboxes = Controls.OfType<GroupBox>().SelectMany(groupBox => groupBox.Controls.OfType<CheckBox>());
                 var myGroupBoxes = Controls.OfType<GroupBox>().SelectMany(groupBox => groupBox.Controls.OfType<NumericUpDown>());
 
             foreach (NumericUpDown txt in myGroupBoxes)
                 {
 
-
+               
                 int copies = (int)txt.Value;
                 if (txt is null)
                 {
                     txt.Value = 0;
                 }
+                //if (txt.Value > 0)
+                //{
+                //    foreach (CheckBox chbx in mycheckboxes)
+                //    {
+                //        chbx.Visible = true;
+                //        chbx.Checked = true;
+                //        chbx.Text = txt.Value.ToString();
+                //    }
+                //}
                     string type = txt.Tag.ToString();
                 paths = loadW2.Where(x => (x.Day == day) & (x.Type == type)).ToList();
                 await Task.Run(() => // spusti se asynchronne metoda printing, zkusit casem pouzit thread nebo backg.worker
@@ -70,7 +84,7 @@ namespace Etikety
             //}
              
         }
-
+        
         private void updatechanged(object sender, ProgressChangedEventArgs e)
         {
 
