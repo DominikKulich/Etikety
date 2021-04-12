@@ -9,15 +9,19 @@ using Spire.Pdf;
 using Spire.Pdf.Print;
 using System.Drawing.Printing;
 using System.Windows.Forms;
+using System.Threading;
+using System.ComponentModel;
 
 namespace Etikety
 {
     class PrintEtiket
     {
+        
         public void Printing(List<LoadDataFromCSV> paths, int copies)
         {
-
-
+            
+          
+            
             foreach (LoadDataFromCSV item in paths)
             {
                 
@@ -71,6 +75,7 @@ namespace Etikety
             }
         }
 
+       
 
 
     }

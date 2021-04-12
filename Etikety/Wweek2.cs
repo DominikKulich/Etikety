@@ -15,6 +15,8 @@ namespace Etikety
     public partial class Wweek2 : Form
     {
         private List<LoadDataFromCSV> loadW2; //vytvoreni pole z load data
+        
+
         public Wweek2()
         {
             InitializeComponent();
@@ -31,22 +33,50 @@ namespace Etikety
 
         }
 
-        private void printbutW1_Click(object sender, EventArgs e)
+        private async void printbutW1_Click(object sender, EventArgs e)
         {
+            printbutW1.Enabled = false;
             PrintEtiket print = new PrintEtiket();
             List<LoadDataFromCSV> paths;
             string day = setDay.SelectedItem.ToString();
-            
-                var myTextBoxes = groupBox1.Controls.OfType<TextBox>();
+           
+           
 
-                foreach (TextBox txt in myTextBoxes)
+                var myGroupBoxes = Controls.OfType<GroupBox>().SelectMany(groupBox => groupBox.Controls.OfType<NumericUpDown>());
+
+            foreach (NumericUpDown txt in myGroupBoxes)
                 {
                     int copies = Convert.ToInt32(txt.Text);
                     string type = txt.Tag.ToString();
                 paths = loadW2.Where(x => (x.Day == day) & (x.Type == type)).ToList();
-                if (copies > 0) print.Printing(paths, copies);
+                await Task.Run(() => // spusti se asynchronne metoda printing, zkusit casem pouzit thread nebo backg.worker
+                {
+                    if (copies > 0) print.Printing(paths, copies);
+                });
                 }
-            
+            printbutW1.Enabled = true;
+            //foreach (NumericUpDown txt in myGroupBoxes)
+            //{
+            //    if (txt.Value > 1)
+            //        txt.Enabled =false;
+
+                
+            //}
+             
+        }
+
+        private void updatechanged(object sender, ProgressChangedEventArgs e)
+        {
+
+        }
+
+        private void updatecompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+
+        }
+
+        private void updateworker(object sender, DoWorkEventArgs e)
+        {
 
         }
     }
