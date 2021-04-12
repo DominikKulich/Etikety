@@ -28,9 +28,11 @@ namespace Etikety
                 {
                     if (item.SpecialPage == "0")
                     {
+                        
                         pdf.LoadFromFile(item.Path);
-                        pdf.PrintSettings.Copies = (short)copies;
+                        pdf.PrintSettings.Copies = (short)(copies / 10);
                         pdf.Print();
+                      //  copies = copies * 10 + mod;
                     }
 
 
@@ -40,13 +42,23 @@ namespace Etikety
                 {
                     if (item.SpecialPage == "1")
                     {
-                        if (mod % 2 == 0)
-                            copies = mod;
-                        else
-                            copies += 1;
+                        //if (mod % 2 == 0)
+                        //    copies = mod / 2;
+                        //if (mod == 7)
+                        //    copies = 4;
+                        //if (mod == 9)
+                        //    copies = 5;
+                        //if (mod == 3)
+                        //    copies = 2;
+                        //if (mod == 5)
+                        //    copies = 6;
+                        //if (mod == 1)
+                        //    copies = 1;
+                        
+                       
 
                         pdf.LoadFromFile(item.Path);
-                        pdf.PrintSettings.Copies = (short)copies;
+                        pdf.PrintSettings.Copies = (short)(mod / 2 + mod % 2);
                         pdf.Print();
                     }
                 }

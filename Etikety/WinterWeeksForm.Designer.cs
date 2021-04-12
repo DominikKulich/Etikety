@@ -33,6 +33,7 @@
             System.Windows.Forms.Button wweek3but;
             System.Windows.Forms.Button wweek2but;
             System.Windows.Forms.Button wweek1but;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinterWeeksForm));
             wweek5but = new System.Windows.Forms.Button();
             wweek4but = new System.Windows.Forms.Button();
             wweek3but = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             // 
             // wweek5but
             // 
+            wweek5but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek5but.Location = new System.Drawing.Point(261, 476);
             wweek5but.Name = "wweek5but";
             wweek5but.Size = new System.Drawing.Size(303, 48);
@@ -51,6 +53,7 @@
             // 
             // wweek4but
             // 
+            wweek4but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek4but.Location = new System.Drawing.Point(261, 376);
             wweek4but.Name = "wweek4but";
             wweek4but.Size = new System.Drawing.Size(303, 48);
@@ -60,6 +63,7 @@
             // 
             // wweek3but
             // 
+            wweek3but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek3but.Location = new System.Drawing.Point(261, 276);
             wweek3but.Name = "wweek3but";
             wweek3but.Size = new System.Drawing.Size(303, 48);
@@ -69,6 +73,7 @@
             // 
             // wweek2but
             // 
+            wweek2but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek2but.Location = new System.Drawing.Point(261, 176);
             wweek2but.Name = "wweek2but";
             wweek2but.Size = new System.Drawing.Size(303, 48);
@@ -79,6 +84,7 @@
             // 
             // wweek1but
             // 
+            wweek1but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek1but.Location = new System.Drawing.Point(261, 76);
             wweek1but.Name = "wweek1but";
             wweek1but.Size = new System.Drawing.Size(303, 48);
@@ -90,6 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(804, 611);
             this.Controls.Add(wweek5but);
             this.Controls.Add(wweek4but);
@@ -97,6 +104,7 @@
             this.Controls.Add(wweek2but);
             this.Controls.Add(wweek1but);
             this.Name = "WinterWeeksForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WinterWeeksForm";
             this.ResumeLayout(false);
 
