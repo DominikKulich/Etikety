@@ -46,7 +46,13 @@ namespace Etikety
 
             foreach (NumericUpDown txt in myGroupBoxes)
                 {
-                    int copies = Convert.ToInt32(txt.Text);
+
+
+                int copies = (int)txt.Value;
+                if (txt is null)
+                {
+                    txt.Value = 0;
+                }
                     string type = txt.Tag.ToString();
                 paths = loadW2.Where(x => (x.Day == day) & (x.Type == type)).ToList();
                 await Task.Run(() => // spusti se asynchronne metoda printing, zkusit casem pouzit thread nebo backg.worker
