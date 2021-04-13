@@ -1,0 +1,7 @@
+den;typ;special;cesta
+Pondělí;r6000;0;C:\etikety_app\2_tyden\lowcarb9000\lowcarb_9000-1.pdf
+Pondělí;r6000;0;C:\etikety_app\2_tyden\lowcarb9000\lowcarb_9000-2.pdf
+Pondělí;r6000;0;C:\etikety_app\2_tyden\lowcarb9000\lowcarb_9000-3.pdf
+Pondělí;r6000;0;C:\etikety_app\2_tyden\lowcarb9000\lowcarb_9000-4.pdf
+Pondělí;r6000;0;C:\etikety_app\2_tyden\lowcarb9000\lowcarb_9000-5.pdf
+Pondělí;r6000;1;C:\etikety_app\2_tyden\specials\racio_6000-special-5.pdf
