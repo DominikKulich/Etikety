@@ -28,6 +28,7 @@ namespace Etikety
             loadW2 = File.ReadAllLines(@"db/wweek2.txt").Skip(1).Select(x => LoadDataFromCSV.GetPrintData(x)).ToList();
             setDay.DataSource = loadW2.Select(x => x.Day).Distinct().ToArray();           
             setDay.SelectedIndex = -1;
+            progressBar1.Hide();
         }
 
         private void setDay_SelectedIndexChanged(object sender, EventArgs e)
@@ -37,6 +38,7 @@ namespace Etikety
 
         private async void printbutW1_Click(object sender, EventArgs e)
         {
+            progressBar1.Show();
             printbutW1.Enabled = false;
             PrintEtiket print = new PrintEtiket();
             List<LoadDataFromCSV> paths;
@@ -65,7 +67,7 @@ namespace Etikety
                     {
 
                         var a = mycheckboxes.Where(l => l.Tag == txt.Tag).First();
-                        a.Text = txt.Value.ToString();
+                        a.Text = txt.Value.ToString();  //nefunguje u r8, r5, m11, m6, lc5000
                         a.Visible = true;
                         a.Checked = true;
                         txt.Value = 0;
@@ -75,7 +77,10 @@ namespace Etikety
                     await Task.Run(() => // spusti se asynchronne metoda printing, zkusit casem pouzit thread nebo backg.worker
                     {
                         if (copies > 0) print.Printing(paths, copies);
+                       
                     });
+
+                    progressBar1.PerformStep();
                 }
                 
                 //foreach (NumericUpDown txt in myGroupBoxes)
@@ -88,8 +93,16 @@ namespace Etikety
 
             }
             printbutW1.Enabled = true;
+            progressBar1.Hide();
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WinterWeeksForm wwf = new WinterWeeksForm();
+            this.Hide();
+            wwf.ShowDialog();
         }
     }
 }
