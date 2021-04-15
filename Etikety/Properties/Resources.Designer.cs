@@ -59,5 +59,15 @@ namespace Etikety.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jFFM_logo_FB_uprava {
+            get {
+                object obj = ResourceManager.GetObject("jFFM_logo_FB_uprava", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

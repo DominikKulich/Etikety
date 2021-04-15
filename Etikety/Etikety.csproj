@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoadDataFromCSV.cs" />
     <Compile Include="PrintEtiket.cs" />
     <Compile Include="Program.cs" />
@@ -74,14 +80,17 @@
     <Compile Include="WinterWeeksForm.Designer.cs">
       <DependentUpon>WinterWeeksForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wweek2.cs">
+    <Compile Include="PrintWeek.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Wweek2.Designer.cs">
-      <DependentUpon>Wweek2.cs</DependentUpon>
+    <Compile Include="PrintWeek.Designer.cs">
+      <DependentUpon>PrintWeek.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,8 +108,8 @@
     <EmbeddedResource Include="WinterWeeksForm.resx">
       <DependentUpon>WinterWeeksForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Wweek2.resx">
-      <DependentUpon>Wweek2.cs</DependentUpon>
+    <EmbeddedResource Include="PrintWeek.resx">
+      <DependentUpon>PrintWeek.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -120,7 +129,9 @@
     <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\jFFM_logo_FB_uprava.png" />
+    <Content Include="Resources\jFFM_logo_FB_uprava.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

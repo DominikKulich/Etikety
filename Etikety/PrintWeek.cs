@@ -10,23 +10,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-
+using System.Drawing.Printing;
 namespace Etikety
 {
 
-    public partial class Wweek2 : Form
+    public partial class PrintWeek : Form
     {
         private List<LoadDataFromCSV> loadW2; //vytvoreni pole z load data
+        private string cesta;
         
 
-        public Wweek2()
+       
+            
+        
+        public PrintWeek(string cestatyden1) //nacteme promennou cestatyden1 a musime ji vytvorit tady v tom formu
         {
+            cesta = cestatyden1;
             InitializeComponent();
         }
 
         private void Wweek2_Load(object sender, EventArgs e)
         {
-            loadW2 = File.ReadAllLines(@"db/week2.txt").Skip(1).Select(x => LoadDataFromCSV.GetPrintData(x)).ToList();
+         
+            loadW2 = File.ReadAllLines(cesta).Skip(1).Select(x => LoadDataFromCSV.GetPrintData(x)).ToList();
+         
             setDay.DataSource = loadW2.Select(x => x.Day).Distinct().ToArray();           
             setDay.SelectedIndex = -1;
             progressBar1.Hide();
@@ -46,6 +53,7 @@ namespace Etikety
             List<LoadDataFromCSV> paths;
             var mycheckboxes = Controls.OfType<GroupBox>().SelectMany(groupBox => groupBox.Controls.OfType<CheckBox>());
             var myGroupBoxes = Controls.OfType<GroupBox>().SelectMany(groupBox => groupBox.Controls.OfType<NumericUpDown>());
+            
             if (setDay.SelectedIndex == -1)
             {
                 MessageBox.Show("Zapomněli jste zvolit den","Zadejte den",MessageBoxButtons.OK, MessageBoxIcon.Information) ;
@@ -70,7 +78,11 @@ namespace Etikety
                     {
                         
                         var a = mycheckboxes.Where(l => l.Tag == txt.Tag).First();
-                        a.Text = txt.Value.ToString();  
+                        if (a.Text == "")
+                            a.Text = txt.Value.ToString();
+                        else
+                            a.Text = (int.Parse(a.Text) + txt.Value).ToString();  //pricte to k checkbox textu kdyz se zmeni znova, musi se int + int prevest na string a udelat if pokud je prazdny retezec
+                        
                         a.Visible = true;
                         a.Checked = true;
                         txt.Value = 0;

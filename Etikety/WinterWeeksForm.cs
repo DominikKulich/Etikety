@@ -12,16 +12,56 @@ namespace Etikety
 {
     public partial class WinterWeeksForm : Form
     {
+       
+
         public WinterWeeksForm()
         {
             InitializeComponent();
+            
         }
 
         private void wweek2but_Click(object sender, EventArgs e)
         {
-            Wweek2 ww2 = new Wweek2();
+
+            PrintWeek Printw = new PrintWeek(@"db/wweek2.txt");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
             this.Hide();
-            ww2.ShowDialog();
+
+            Printw.ShowDialog();
+        }
+
+        private void wweek1but_Click(object sender, EventArgs e)
+        {
+            
+            
+            PrintWeek Printw = new PrintWeek(@"db/wweek1.txt");
+            this.Hide();
+            
+            Printw.ShowDialog();
+            
+        }
+
+        private void wweek4but_Click(object sender, EventArgs e)
+        {
+            PrintWeek Printw = new PrintWeek(@"db/wweek4.txt");
+            this.Hide();
+
+            Printw.ShowDialog();
+        }
+
+        private void wweek3but_Click(object sender, EventArgs e)
+        {
+            PrintWeek Printw = new PrintWeek(@"db/wweek3.txt");
+            this.Hide();
+
+            Printw.ShowDialog();
+        }
+
+        private void wweek5but_Click(object sender, EventArgs e)
+        {
+            PrintWeek Printw = new PrintWeek(@"db/wweek5.txt");
+            this.Hide();
+
+            Printw.ShowDialog();
         }
     }
 }

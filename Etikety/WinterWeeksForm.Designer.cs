@@ -43,37 +43,40 @@
             // 
             // wweek5but
             // 
-            wweek5but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            wweek5but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek5but.Location = new System.Drawing.Point(261, 476);
             wweek5but.Name = "wweek5but";
             wweek5but.Size = new System.Drawing.Size(303, 48);
             wweek5but.TabIndex = 10;
             wweek5but.Text = "Týden 5";
             wweek5but.UseVisualStyleBackColor = true;
+            wweek5but.Click += new System.EventHandler(this.wweek5but_Click);
             // 
             // wweek4but
             // 
-            wweek4but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            wweek4but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek4but.Location = new System.Drawing.Point(261, 376);
             wweek4but.Name = "wweek4but";
             wweek4but.Size = new System.Drawing.Size(303, 48);
             wweek4but.TabIndex = 9;
             wweek4but.Text = "Týden 4";
             wweek4but.UseVisualStyleBackColor = true;
+            wweek4but.Click += new System.EventHandler(this.wweek4but_Click);
             // 
             // wweek3but
             // 
-            wweek3but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            wweek3but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek3but.Location = new System.Drawing.Point(261, 276);
             wweek3but.Name = "wweek3but";
             wweek3but.Size = new System.Drawing.Size(303, 48);
             wweek3but.TabIndex = 8;
             wweek3but.Text = "Týden 3";
             wweek3but.UseVisualStyleBackColor = true;
+            wweek3but.Click += new System.EventHandler(this.wweek3but_Click);
             // 
             // wweek2but
             // 
-            wweek2but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            wweek2but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek2but.Location = new System.Drawing.Point(261, 176);
             wweek2but.Name = "wweek2but";
             wweek2but.Size = new System.Drawing.Size(303, 48);
@@ -84,13 +87,14 @@
             // 
             // wweek1but
             // 
-            wweek1but.Font = new System.Drawing.Font("Spartan ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            wweek1but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             wweek1but.Location = new System.Drawing.Point(261, 76);
             wweek1but.Name = "wweek1but";
             wweek1but.Size = new System.Drawing.Size(303, 48);
             wweek1but.TabIndex = 6;
             wweek1but.Text = "Týden 1";
             wweek1but.UseVisualStyleBackColor = true;
+            wweek1but.Click += new System.EventHandler(this.wweek1but_Click);
             // 
             // WinterWeeksForm
             // 
@@ -103,6 +107,7 @@
             this.Controls.Add(wweek3but);
             this.Controls.Add(wweek2but);
             this.Controls.Add(wweek1but);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WinterWeeksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WinterWeeksForm";

@@ -43,6 +43,7 @@
             // 
             // sweek1but
             // 
+            sweek1but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             sweek1but.Location = new System.Drawing.Point(261, 70);
             sweek1but.Name = "sweek1but";
             sweek1but.Size = new System.Drawing.Size(303, 48);
@@ -52,6 +53,7 @@
             // 
             // sweek2but
             // 
+            sweek2but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             sweek2but.Location = new System.Drawing.Point(261, 170);
             sweek2but.Name = "sweek2but";
             sweek2but.Size = new System.Drawing.Size(303, 48);
@@ -61,6 +63,7 @@
             // 
             // sweek3but
             // 
+            sweek3but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             sweek3but.Location = new System.Drawing.Point(261, 270);
             sweek3but.Name = "sweek3but";
             sweek3but.Size = new System.Drawing.Size(303, 48);
@@ -70,6 +73,7 @@
             // 
             // sweek4but
             // 
+            sweek4but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             sweek4but.Location = new System.Drawing.Point(261, 370);
             sweek4but.Name = "sweek4but";
             sweek4but.Size = new System.Drawing.Size(303, 48);
@@ -79,6 +83,7 @@
             // 
             // sweek5but
             // 
+            sweek5but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             sweek5but.Location = new System.Drawing.Point(261, 470);
             sweek5but.Name = "sweek5but";
             sweek5but.Size = new System.Drawing.Size(303, 48);
@@ -97,6 +102,7 @@
             this.Controls.Add(sweek3but);
             this.Controls.Add(sweek2but);
             this.Controls.Add(sweek1but);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SummerWeeksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SummerWeeksForm";

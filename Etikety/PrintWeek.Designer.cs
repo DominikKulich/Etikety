@@ -1,6 +1,6 @@
 ﻿namespace Etikety
 {
-    partial class Wweek2
+    partial class PrintWeek
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Wweek2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrintWeek));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox23 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
@@ -60,6 +64,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkBox22 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
@@ -98,18 +104,15 @@
             this.printbutW1 = new System.Windows.Forms.Button();
             this.setDay = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.helpbut = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.resetbut = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.gobackbut = new System.Windows.Forms.Button();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.helpbut = new System.Windows.Forms.Button();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
-            this.label9 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
@@ -135,7 +138,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -191,6 +194,52 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "RACIO";
+            // 
+            // checkBox23
+            // 
+            this.checkBox23.AutoSize = true;
+            this.checkBox23.Enabled = false;
+            this.checkBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox23.Location = new System.Drawing.Point(185, 313);
+            this.checkBox23.Name = "checkBox23";
+            this.checkBox23.Size = new System.Drawing.Size(15, 14);
+            this.checkBox23.TabIndex = 46;
+            this.checkBox23.Tag = "r9000";
+            this.checkBox23.UseVisualStyleBackColor = true;
+            this.checkBox23.Visible = false;
+            // 
+            // numericUpDown23
+            // 
+            this.numericUpDown23.Location = new System.Drawing.Point(125, 311);
+            this.numericUpDown23.Name = "numericUpDown23";
+            this.numericUpDown23.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown23.TabIndex = 45;
+            this.numericUpDown23.Tag = "r9000";
+            this.numericUpDown23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(6, 311);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 20);
+            this.label9.TabIndex = 44;
+            this.label9.Tag = "r9600";
+            this.label9.Text = "Racio 9600";
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Enabled = false;
+            this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox10.Location = new System.Drawing.Point(185, 233);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox10.TabIndex = 43;
+            this.checkBox10.Tag = "r8000";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox10.Visible = false;
             // 
             // checkBox6
             // 
@@ -520,6 +569,30 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "MUSCLE";
+            // 
+            // checkBox22
+            // 
+            this.checkBox22.AutoSize = true;
+            this.checkBox22.Enabled = false;
+            this.checkBox22.Location = new System.Drawing.Point(196, 53);
+            this.checkBox22.Name = "checkBox22";
+            this.checkBox22.Size = new System.Drawing.Size(15, 14);
+            this.checkBox22.TabIndex = 48;
+            this.checkBox22.Tag = "m6000";
+            this.checkBox22.UseVisualStyleBackColor = true;
+            this.checkBox22.Visible = false;
+            // 
+            // checkBox17
+            // 
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.Enabled = false;
+            this.checkBox17.Location = new System.Drawing.Point(196, 251);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(15, 14);
+            this.checkBox17.TabIndex = 47;
+            this.checkBox17.Tag = "m11000";
+            this.checkBox17.UseVisualStyleBackColor = true;
+            this.checkBox17.Visible = false;
             // 
             // checkBox16
             // 
@@ -946,6 +1019,17 @@
             this.groupBox4.TabIndex = 31;
             this.groupBox4.TabStop = false;
             // 
+            // helpbut
+            // 
+            this.helpbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.helpbut.Location = new System.Drawing.Point(62, 107);
+            this.helpbut.Name = "helpbut";
+            this.helpbut.Size = new System.Drawing.Size(159, 40);
+            this.helpbut.TabIndex = 34;
+            this.helpbut.Text = "Nápověda";
+            this.helpbut.UseVisualStyleBackColor = false;
+            this.helpbut.Click += new System.EventHandler(this.helpbut_Click);
+            // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(6, 73);
@@ -956,12 +1040,13 @@
             // 
             // resetbut
             // 
+            this.resetbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.resetbut.Location = new System.Drawing.Point(62, 163);
             this.resetbut.Name = "resetbut";
             this.resetbut.Size = new System.Drawing.Size(159, 40);
             this.resetbut.TabIndex = 32;
             this.resetbut.Text = "Reset";
-            this.resetbut.UseVisualStyleBackColor = true;
+            this.resetbut.UseVisualStyleBackColor = false;
             this.resetbut.Click += new System.EventHandler(this.button2_Click);
             // 
             // label25
@@ -984,87 +1069,22 @@
             this.gobackbut.UseVisualStyleBackColor = true;
             this.gobackbut.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox17
+            // menuStrip1
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Enabled = false;
-            this.checkBox17.Location = new System.Drawing.Point(196, 251);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(15, 14);
-            this.checkBox17.TabIndex = 47;
-            this.checkBox17.Tag = "m11000";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            this.checkBox17.Visible = false;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(804, 27);
+            this.menuStrip1.TabIndex = 33;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // checkBox10
+            // toolStripComboBox1
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Enabled = false;
-            this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox10.Location = new System.Drawing.Point(185, 233);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(15, 14);
-            this.checkBox10.TabIndex = 43;
-            this.checkBox10.Tag = "r8000";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            this.checkBox10.Visible = false;
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             // 
-            // checkBox22
-            // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Enabled = false;
-            this.checkBox22.Location = new System.Drawing.Point(196, 53);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(15, 14);
-            this.checkBox22.TabIndex = 48;
-            this.checkBox22.Tag = "m6000";
-            this.checkBox22.UseVisualStyleBackColor = true;
-            this.checkBox22.Visible = false;
-            // 
-            // helpbut
-            // 
-            this.helpbut.Location = new System.Drawing.Point(62, 107);
-            this.helpbut.Name = "helpbut";
-            this.helpbut.Size = new System.Drawing.Size(159, 40);
-            this.helpbut.TabIndex = 34;
-            this.helpbut.Text = "Nápověda";
-            this.helpbut.UseVisualStyleBackColor = true;
-            this.helpbut.Click += new System.EventHandler(this.helpbut_Click);
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Enabled = false;
-            this.checkBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox23.Location = new System.Drawing.Point(185, 313);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(15, 14);
-            this.checkBox23.TabIndex = 46;
-            this.checkBox23.Tag = "r9000";
-            this.checkBox23.UseVisualStyleBackColor = true;
-            this.checkBox23.Visible = false;
-            // 
-            // numericUpDown23
-            // 
-            this.numericUpDown23.Location = new System.Drawing.Point(125, 311);
-            this.numericUpDown23.Name = "numericUpDown23";
-            this.numericUpDown23.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown23.TabIndex = 45;
-            this.numericUpDown23.Tag = "r9000";
-            this.numericUpDown23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(6, 311);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 20);
-            this.label9.TabIndex = 44;
-            this.label9.Tag = "r9600";
-            this.label9.Text = "Racio 9600";
-            // 
-            // Wweek2
+            // PrintWeek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1077,12 +1097,16 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Wweek2";
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "PrintWeek";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Týden 2";
             this.Load += new System.EventHandler(this.Wweek2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
@@ -1111,8 +1135,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1198,5 +1224,7 @@
         private System.Windows.Forms.CheckBox checkBox23;
         private System.Windows.Forms.NumericUpDown numericUpDown23;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
     }
 }

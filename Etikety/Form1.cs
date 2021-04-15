@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Etikety
 {
@@ -26,6 +27,11 @@ namespace Etikety
             WinterWeeksForm wwf = new WinterWeeksForm();
             this.Hide();
             wwf.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"help.txt");
         }
     }
 }
