@@ -12,10 +12,11 @@ namespace Etikety
 {
     public partial class WinterWeeksForm : Form
     {
-       
 
-        public WinterWeeksForm()
+        string printername;
+        public WinterWeeksForm(string pprintername)
         {
+            printername = pprintername;
             InitializeComponent();
             
         }
@@ -23,7 +24,7 @@ namespace Etikety
         private void wweek2but_Click(object sender, EventArgs e)
         {
 
-            PrintWeek Printw = new PrintWeek(@"db/wweek2.txt");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
+            PrintWeek Printw = new PrintWeek(@"db/wweek2.txt", printername);  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
             this.Hide();
 
             Printw.ShowDialog();
@@ -33,7 +34,7 @@ namespace Etikety
         {
             
             
-            PrintWeek Printw = new PrintWeek(@"db/wweek1.txt");
+            PrintWeek Printw = new PrintWeek(@"db/wweek1.txt", printername);
             this.Hide();
             
             Printw.ShowDialog();
@@ -42,7 +43,7 @@ namespace Etikety
 
         private void wweek4but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/wweek4.txt");
+            PrintWeek Printw = new PrintWeek(@"db/wweek4.txt", printername);
             this.Hide();
 
             Printw.ShowDialog();
@@ -50,7 +51,7 @@ namespace Etikety
 
         private void wweek3but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/wweek3.txt");
+            PrintWeek Printw = new PrintWeek(@"db/wweek3.txt", printername);
             this.Hide();
 
             Printw.ShowDialog();
@@ -58,10 +59,22 @@ namespace Etikety
 
         private void wweek5but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/wweek5.txt");
+            PrintWeek Printw = new PrintWeek(@"db/wweek5.txt", printername);
             this.Hide();
 
             Printw.ShowDialog();
+        }
+
+        private void WinterWeeksForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            this.Hide();
+            form.ShowDialog();
         }
     }
 }

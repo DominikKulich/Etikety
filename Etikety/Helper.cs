@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Etikety
 {
-    public partial class help : Form
+    public partial class Helper : Form
     {
-        public help()
+        public Helper()
         {
             InitializeComponent();
         }

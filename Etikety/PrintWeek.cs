@@ -18,13 +18,14 @@ namespace Etikety
     {
         private List<LoadDataFromCSV> loadW2; //vytvoreni pole z load data
         private string cesta;
-        
+        string printername;
 
        
             
         
-        public PrintWeek(string cestatyden1) //nacteme promennou cestatyden1 a musime ji vytvorit tady v tom formu
+        public PrintWeek(string cestatyden1, string pprintername) //nacteme promennou cestatyden1 a musime ji vytvorit tady v tom formu
         {
+            printername = pprintername;
             cesta = cestatyden1;
             InitializeComponent();
         }
@@ -93,7 +94,7 @@ namespace Etikety
                     paths = loadW2.Where(x => (x.Day == day) & (x.Type == type)).ToList();
                     await Task.Run(() => // spusti se asynchronne metoda printing, zkusit casem pouzit thread nebo backg.worker
                     {
-                        if (copies > 0) print.Printing(paths, copies);
+                        if (copies > 0) print.Printing(paths, copies, printername);
                        
 
                     });
@@ -118,7 +119,7 @@ namespace Etikety
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WinterWeeksForm wwf = new WinterWeeksForm();
+            WinterWeeksForm wwf = new WinterWeeksForm(printername);
             this.Hide();
             wwf.ShowDialog();
 
@@ -138,7 +139,8 @@ namespace Etikety
 
         private void helpbut_Click(object sender, EventArgs e)
         {
-            Process.Start(@"help.txt");
+            Helper helper = new Helper();
+            helper.ShowDialog();
         }
     }
 }

@@ -16,8 +16,16 @@ namespace Etikety
 {
     class PrintEtiket
     {
+       
+      
+
+       
+
+
+
         
-        public void Printing(List<LoadDataFromCSV> paths, int copies)
+
+        public void Printing(List<LoadDataFromCSV> paths, int copies, string printername)
         {
             
           
@@ -27,6 +35,7 @@ namespace Etikety
                 
                 PdfDocument pdf = new PdfDocument(); // proc path? 
                 pdf.PrintSettings.PrintController = new StandardPrintController();
+                pdf.PrintSettings.PrinterName = printername;
                 int mod = copies % 10;
                 if (copies - mod > 9)
                 {
@@ -46,18 +55,7 @@ namespace Etikety
                 {
                     if (item.SpecialPage == "1")
                     {
-                        //if (mod % 2 == 0)
-                        //    copies = mod / 2;
-                        //if (mod == 7)
-                        //    copies = 4;
-                        //if (mod == 9)
-                        //    copies = 5;
-                        //if (mod == 3)
-                        //    copies = 2;
-                        //if (mod == 5)
-                        //    copies = 6;
-                        //if (mod == 1)
-                        //    copies = 1;
+                       
                         
                        
 

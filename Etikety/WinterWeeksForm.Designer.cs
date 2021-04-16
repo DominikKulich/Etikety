@@ -34,6 +34,7 @@
             System.Windows.Forms.Button wweek2but;
             System.Windows.Forms.Button wweek1but;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinterWeeksForm));
+            this.button1 = new System.Windows.Forms.Button();
             wweek5but = new System.Windows.Forms.Button();
             wweek4but = new System.Windows.Forms.Button();
             wweek3but = new System.Windows.Forms.Button();
@@ -96,25 +97,41 @@
             wweek1but.UseVisualStyleBackColor = true;
             wweek1but.Click += new System.EventHandler(this.wweek1but_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(351, 543);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 56);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Zpět";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // WinterWeeksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(804, 611);
+            this.Controls.Add(this.button1);
             this.Controls.Add(wweek5but);
             this.Controls.Add(wweek4but);
             this.Controls.Add(wweek3but);
             this.Controls.Add(wweek2but);
             this.Controls.Add(wweek1but);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WinterWeeksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WinterWeeksForm";
+            this.Load += new System.EventHandler(this.WinterWeeksForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
     }
 }
