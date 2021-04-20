@@ -19,14 +19,16 @@ namespace Etikety
         private List<LoadDataFromCSV> loadWeek; //vytvoreni pole z load data
         private string cesta;
         string printername;
+        string nazevtydne;
 
        
             
         
-        public PrintWeek(string cestatyden1, string pprintername) //nacteme promennou cestatyden1 a musime ji vytvorit tady v tom formu
+        public PrintWeek(string cestatyden1, string pprintername, string pnazevtydne) //nacteme promennou cestatyden1 a musime ji vytvorit tady v tom formu
         {
             printername = pprintername;
             cesta = cestatyden1;
+            nazevtydne = pnazevtydne;
             InitializeComponent();
         }
 
@@ -34,6 +36,7 @@ namespace Etikety
         {
          
             loadWeek = File.ReadAllLines(cesta).Skip(1).Select(x => LoadDataFromCSV.GetPrintData(x)).ToList();
+            label12.Text = nazevtydne;
          
             setDay.DataSource = loadWeek.Select(x => x.Day).Distinct().ToArray();           
             setDay.SelectedIndex = -1;

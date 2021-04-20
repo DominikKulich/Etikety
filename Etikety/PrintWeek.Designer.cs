@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrintWeek));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox23 = new System.Windows.Forms.CheckBox();
             this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
@@ -107,8 +109,7 @@
             this.resetbut = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.gobackbut = new System.Windows.Forms.Button();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
@@ -192,6 +193,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "RACIO";
             // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Enabled = false;
+            this.checkBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox9.Location = new System.Drawing.Point(185, 312);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox9.TabIndex = 47;
+            this.checkBox9.Tag = "r9600";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox9.Visible = false;
+            // 
+            // checkBox23
+            // 
+            this.checkBox23.AutoSize = true;
+            this.checkBox23.Enabled = false;
+            this.checkBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBox23.Location = new System.Drawing.Point(185, 274);
+            this.checkBox23.Name = "checkBox23";
+            this.checkBox23.Size = new System.Drawing.Size(15, 14);
+            this.checkBox23.TabIndex = 46;
+            this.checkBox23.Tag = "r9000";
+            this.checkBox23.UseVisualStyleBackColor = true;
+            this.checkBox23.Visible = false;
+            // 
             // numericUpDown23
             // 
             this.numericUpDown23.Location = new System.Drawing.Point(125, 311);
@@ -217,7 +244,7 @@
             this.checkBox10.AutoSize = true;
             this.checkBox10.Enabled = false;
             this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox10.Location = new System.Drawing.Point(185, 236);
+            this.checkBox10.Location = new System.Drawing.Point(185, 234);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(15, 14);
             this.checkBox10.TabIndex = 43;
@@ -282,7 +309,7 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.Enabled = false;
             this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox5.Location = new System.Drawing.Point(185, 196);
+            this.checkBox5.Location = new System.Drawing.Point(185, 194);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(15, 14);
             this.checkBox5.TabIndex = 37;
@@ -545,7 +572,7 @@
             // 
             this.checkBox22.AutoSize = true;
             this.checkBox22.Enabled = false;
-            this.checkBox22.Location = new System.Drawing.Point(196, 49);
+            this.checkBox22.Location = new System.Drawing.Point(196, 50);
             this.checkBox22.Name = "checkBox22";
             this.checkBox22.Size = new System.Drawing.Size(15, 14);
             this.checkBox22.TabIndex = 48;
@@ -1040,31 +1067,17 @@
             this.gobackbut.UseVisualStyleBackColor = true;
             this.gobackbut.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox9
+            // label12
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Enabled = false;
-            this.checkBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox9.Location = new System.Drawing.Point(185, 316);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(15, 14);
-            this.checkBox9.TabIndex = 47;
-            this.checkBox9.Tag = "r9600";
-            this.checkBox9.UseVisualStyleBackColor = true;
-            this.checkBox9.Visible = false;
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Enabled = false;
-            this.checkBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox23.Location = new System.Drawing.Point(185, 276);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(15, 14);
-            this.checkBox23.TabIndex = 46;
-            this.checkBox23.Tag = "r9000";
-            this.checkBox23.UseVisualStyleBackColor = true;
-            this.checkBox23.Visible = false;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(267, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(250, 25);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "Týden 4 - Zimní cyklus";
             // 
             // PrintWeek
             // 
@@ -1073,6 +1086,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(804, 611);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.gobackbut);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.printbutW1);
@@ -1117,6 +1131,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1202,5 +1217,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox23;
+        private System.Windows.Forms.Label label12;
     }
 }
