@@ -8,9 +8,9 @@ namespace Etikety
 {
     class LoadDataFromCSV
     {
-        public string Day { get; set; } // 1 =pondeli, 2=utery, 3=streda, 4=ctvrtek, 5=patek
-        public string Type { get; set; } //lc5000,r5000,m6000
-        public string SpecialPage { get; set; } // 0 nebo 1
+        public string Day { get; set; } 
+        public string Type { get; set; } 
+        public string SpecialPage { get; set; } 
         public string Path { get; set; }
 
         public static LoadDataFromCSV GetPrintData(string line) //? proc line

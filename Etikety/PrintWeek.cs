@@ -16,7 +16,7 @@ namespace Etikety
 
     public partial class PrintWeek : Form
     {
-        private List<LoadDataFromCSV> loadW2; //vytvoreni pole z load data
+        private List<LoadDataFromCSV> loadWeek; //vytvoreni pole z load data
         private string cesta;
         string printername;
 
@@ -33,9 +33,9 @@ namespace Etikety
         private void Wweek2_Load(object sender, EventArgs e)
         {
          
-            loadW2 = File.ReadAllLines(cesta).Skip(1).Select(x => LoadDataFromCSV.GetPrintData(x)).ToList();
+            loadWeek = File.ReadAllLines(cesta).Skip(1).Select(x => LoadDataFromCSV.GetPrintData(x)).ToList();
          
-            setDay.DataSource = loadW2.Select(x => x.Day).Distinct().ToArray();           
+            setDay.DataSource = loadWeek.Select(x => x.Day).Distinct().ToArray();           
             setDay.SelectedIndex = -1;
             progressBar1.Hide();
             
@@ -91,7 +91,7 @@ namespace Etikety
                     }
                     progressBar1.Value += progressBar1.Maximum / myGroupBoxes.Count();
                     string type = txt.Tag.ToString();
-                    paths = loadW2.Where(x => (x.Day == day) & (x.Type == type)).ToList();
+                    paths = loadWeek.Where(x => (x.Day == day) & (x.Type == type)).ToList();
                     await Task.Run(() => // spusti se asynchronne metoda printing, zkusit casem pouzit thread nebo backg.worker
                     {
                         if (copies > 0) print.Printing(paths, copies, printername);

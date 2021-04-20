@@ -43,7 +43,7 @@ namespace Etikety
 
         private void wweek4but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/wweek4.csv", printername);
+            PrintWeek Printw = new PrintWeek(@"db/wweek4.txt", printername);
             this.Hide();
 
             Printw.ShowDialog();
