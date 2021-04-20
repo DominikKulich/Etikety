@@ -42,17 +42,6 @@
             sweek1but = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(351, 543);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 56);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Zpět";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // sweek5but
             // 
             sweek5but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -108,6 +97,17 @@
             sweek1but.UseVisualStyleBackColor = true;
             sweek1but.Click += new System.EventHandler(this.sweek1but_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(351, 543);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 56);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Zpět";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // SummerWeeksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -125,6 +125,7 @@
             this.Name = "SummerWeeksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Letní cyklus";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SummerWeeksForm_FormClosing);
             this.ResumeLayout(false);
 
         }

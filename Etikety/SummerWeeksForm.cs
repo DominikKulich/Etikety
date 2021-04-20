@@ -65,5 +65,10 @@ namespace Etikety
 
             Printw.ShowDialog();
         }
+
+        private void SummerWeeksForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

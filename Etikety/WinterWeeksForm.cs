@@ -76,5 +76,10 @@ namespace Etikety
             this.Hide();
             form.ShowDialog();
         }
+
+        private void WinterWeeksForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -125,6 +125,7 @@
             this.Name = "WinterWeeksForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zimní cyklus";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.WinterWeeksForm_FormClosing);
             this.Load += new System.EventHandler(this.WinterWeeksForm_Load);
             this.ResumeLayout(false);
 
