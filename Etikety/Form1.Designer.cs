@@ -48,6 +48,7 @@
             SummerBut.TabIndex = 0;
             SummerBut.Text = "Letní Cyklus";
             SummerBut.UseVisualStyleBackColor = true;
+            SummerBut.Click += new System.EventHandler(this.SummerBut_Click);
             // 
             // WinterBut
             // 

@@ -71,5 +71,12 @@ namespace Etikety
         {
             ZapisNazevTiskarny();
         }
+
+        private void SummerBut_Click(object sender, EventArgs e)
+        {
+            SummerWeeksForm swf = new SummerWeeksForm(NactiNazevTiskarny());  //posleme do dalsiho formu parametr, musi byt return a vratit jakoby promennou, na druhe strane musime string a promenna
+            this.Hide();
+            swf.ShowDialog();
+        }
     }
 }
