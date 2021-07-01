@@ -122,7 +122,7 @@ namespace Etikety
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WinterWeeksForm wwf = new WinterWeeksForm(printername);
+            Form1 wwf = new Form1();
             this.Hide();
             wwf.ShowDialog();
 

@@ -28,7 +28,7 @@ namespace Etikety
 
         private void sweek1but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/sweek1.txt", printername, "Týden 1");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
+            PrintWeek Printw = new PrintWeek(@"db/sweek1.txt", printername, "Týden 1 - Letní cyklus");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
             this.Hide();
 
             Printw.ShowDialog();
@@ -36,7 +36,7 @@ namespace Etikety
 
         private void sweek2but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/sweek2.txt", printername, "Týden 2");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
+            PrintWeek Printw = new PrintWeek(@"db/sweek2.txt", printername, "Týden 2 - Letní cyklus");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
             this.Hide();
 
             Printw.ShowDialog();
@@ -44,7 +44,7 @@ namespace Etikety
 
         private void sweek3but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/sweek3.txt", printername, "Týden 3");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
+            PrintWeek Printw = new PrintWeek(@"db/sweek3.txt", printername, "Týden 3 - Letní cyklus");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
             this.Hide();
 
             Printw.ShowDialog();
@@ -52,7 +52,7 @@ namespace Etikety
 
         private void sweek4but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/sweek4.txt", printername, "Týden 4");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
+            PrintWeek Printw = new PrintWeek(@"db/sweek4.txt", printername, "Týden 4 - Letní cyklus");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
             this.Hide();
 
             Printw.ShowDialog();
@@ -60,7 +60,7 @@ namespace Etikety
 
         private void sweek5but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/sweek5.txt", printername, "Týden 5");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
+            PrintWeek Printw = new PrintWeek(@"db/sweek5.txt", printername, "Týden 5 - Letní cyklus");  //do formu printw vlozime parametr cesty, ten zavolame jako cestatyden1 ve formu printweek
             this.Hide();
 
             Printw.ShowDialog();
@@ -69,6 +69,11 @@ namespace Etikety
         private void SummerWeeksForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void SummerWeeksForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

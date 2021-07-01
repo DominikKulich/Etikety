@@ -44,6 +44,7 @@
             // 
             // sweek5but
             // 
+            sweek5but.Enabled = false;
             sweek5but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             sweek5but.Location = new System.Drawing.Point(261, 476);
             sweek5but.Name = "sweek5but";
@@ -55,6 +56,7 @@
             // 
             // sweek4but
             // 
+            sweek4but.Enabled = false;
             sweek4but.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             sweek4but.Location = new System.Drawing.Point(261, 376);
             sweek4but.Name = "sweek4but";
@@ -126,6 +128,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Letní cyklus";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SummerWeeksForm_FormClosing);
+            this.Load += new System.EventHandler(this.SummerWeeksForm_Load);
             this.ResumeLayout(false);
 
         }

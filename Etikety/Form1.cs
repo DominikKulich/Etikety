@@ -10,17 +10,19 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Drawing.Printing;
 using System.IO;
+using System.Net;
 
 namespace Etikety
 {
 
     public partial class Form1 : Form
     {
-        
-        
+
+       
 
         public Form1()
         {
+            
             InitializeComponent();
             FillPrinters();
             NactiNazevTiskarny();

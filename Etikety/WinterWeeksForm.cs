@@ -59,7 +59,7 @@ namespace Etikety
 
         private void wweek5but_Click(object sender, EventArgs e)
         {
-            PrintWeek Printw = new PrintWeek(@"db/wweek5.txt", printername, "Týden 4 - Zimní cyklus");
+            PrintWeek Printw = new PrintWeek(@"db/wweek5.txt", printername, "Týden 5 - Zimní cyklus");
             this.Hide();
 
             Printw.ShowDialog();
