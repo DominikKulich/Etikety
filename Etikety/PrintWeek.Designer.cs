@@ -110,6 +110,28 @@
             this.label25 = new System.Windows.Forms.Label();
             this.gobackbut = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.checkBox24 = new System.Windows.Forms.CheckBox();
+            this.checkBox25 = new System.Windows.Forms.CheckBox();
+            this.checkBox26 = new System.Windows.Forms.CheckBox();
+            this.checkBox27 = new System.Windows.Forms.CheckBox();
+            this.checkBox28 = new System.Windows.Forms.CheckBox();
+            this.checkBox29 = new System.Windows.Forms.CheckBox();
+            this.checkBox30 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown27 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown29 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown30 = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
@@ -137,6 +159,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -563,7 +593,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox2.Location = new System.Drawing.Point(557, 39);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(241, 462);
+            this.groupBox2.Size = new System.Drawing.Size(241, 308);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "MUSCLE";
@@ -572,7 +602,7 @@
             // 
             this.checkBox22.AutoSize = true;
             this.checkBox22.Enabled = false;
-            this.checkBox22.Location = new System.Drawing.Point(196, 50);
+            this.checkBox22.Location = new System.Drawing.Point(196, 32);
             this.checkBox22.Name = "checkBox22";
             this.checkBox22.Size = new System.Drawing.Size(15, 14);
             this.checkBox22.TabIndex = 48;
@@ -584,7 +614,7 @@
             // 
             this.checkBox17.AutoSize = true;
             this.checkBox17.Enabled = false;
-            this.checkBox17.Location = new System.Drawing.Point(196, 251);
+            this.checkBox17.Location = new System.Drawing.Point(196, 233);
             this.checkBox17.Name = "checkBox17";
             this.checkBox17.Size = new System.Drawing.Size(15, 14);
             this.checkBox17.TabIndex = 47;
@@ -596,7 +626,7 @@
             // 
             this.checkBox16.AutoSize = true;
             this.checkBox16.Enabled = false;
-            this.checkBox16.Location = new System.Drawing.Point(196, 291);
+            this.checkBox16.Location = new System.Drawing.Point(196, 273);
             this.checkBox16.Name = "checkBox16";
             this.checkBox16.Size = new System.Drawing.Size(15, 14);
             this.checkBox16.TabIndex = 46;
@@ -608,7 +638,7 @@
             // 
             this.checkBox18.AutoSize = true;
             this.checkBox18.Enabled = false;
-            this.checkBox18.Location = new System.Drawing.Point(196, 211);
+            this.checkBox18.Location = new System.Drawing.Point(196, 193);
             this.checkBox18.Name = "checkBox18";
             this.checkBox18.Size = new System.Drawing.Size(15, 14);
             this.checkBox18.TabIndex = 44;
@@ -620,7 +650,7 @@
             // 
             this.checkBox19.AutoSize = true;
             this.checkBox19.Enabled = false;
-            this.checkBox19.Location = new System.Drawing.Point(196, 171);
+            this.checkBox19.Location = new System.Drawing.Point(196, 153);
             this.checkBox19.Name = "checkBox19";
             this.checkBox19.Size = new System.Drawing.Size(15, 14);
             this.checkBox19.TabIndex = 43;
@@ -632,7 +662,7 @@
             // 
             this.checkBox20.AutoSize = true;
             this.checkBox20.Enabled = false;
-            this.checkBox20.Location = new System.Drawing.Point(196, 131);
+            this.checkBox20.Location = new System.Drawing.Point(196, 113);
             this.checkBox20.Name = "checkBox20";
             this.checkBox20.Size = new System.Drawing.Size(15, 14);
             this.checkBox20.TabIndex = 42;
@@ -644,7 +674,7 @@
             // 
             this.checkBox21.AutoSize = true;
             this.checkBox21.Enabled = false;
-            this.checkBox21.Location = new System.Drawing.Point(196, 91);
+            this.checkBox21.Location = new System.Drawing.Point(196, 73);
             this.checkBox21.Name = "checkBox21";
             this.checkBox21.Size = new System.Drawing.Size(15, 14);
             this.checkBox21.TabIndex = 41;
@@ -654,7 +684,7 @@
             // 
             // numericUpDown16
             // 
-            this.numericUpDown16.Location = new System.Drawing.Point(136, 290);
+            this.numericUpDown16.Location = new System.Drawing.Point(136, 272);
             this.numericUpDown16.Name = "numericUpDown16";
             this.numericUpDown16.Size = new System.Drawing.Size(54, 22);
             this.numericUpDown16.TabIndex = 36;
@@ -663,7 +693,7 @@
             // 
             // numericUpDown17
             // 
-            this.numericUpDown17.Location = new System.Drawing.Point(136, 250);
+            this.numericUpDown17.Location = new System.Drawing.Point(136, 232);
             this.numericUpDown17.Name = "numericUpDown17";
             this.numericUpDown17.Size = new System.Drawing.Size(54, 22);
             this.numericUpDown17.TabIndex = 35;
@@ -672,7 +702,7 @@
             // 
             // numericUpDown18
             // 
-            this.numericUpDown18.Location = new System.Drawing.Point(136, 170);
+            this.numericUpDown18.Location = new System.Drawing.Point(136, 152);
             this.numericUpDown18.Name = "numericUpDown18";
             this.numericUpDown18.Size = new System.Drawing.Size(54, 22);
             this.numericUpDown18.TabIndex = 34;
@@ -681,7 +711,7 @@
             // 
             // numericUpDown19
             // 
-            this.numericUpDown19.Location = new System.Drawing.Point(136, 210);
+            this.numericUpDown19.Location = new System.Drawing.Point(136, 192);
             this.numericUpDown19.Name = "numericUpDown19";
             this.numericUpDown19.Size = new System.Drawing.Size(54, 22);
             this.numericUpDown19.TabIndex = 33;
@@ -690,7 +720,7 @@
             // 
             // numericUpDown20
             // 
-            this.numericUpDown20.Location = new System.Drawing.Point(136, 130);
+            this.numericUpDown20.Location = new System.Drawing.Point(136, 112);
             this.numericUpDown20.Name = "numericUpDown20";
             this.numericUpDown20.Size = new System.Drawing.Size(54, 22);
             this.numericUpDown20.TabIndex = 32;
@@ -699,7 +729,7 @@
             // 
             // numericUpDown21
             // 
-            this.numericUpDown21.Location = new System.Drawing.Point(136, 90);
+            this.numericUpDown21.Location = new System.Drawing.Point(136, 72);
             this.numericUpDown21.Name = "numericUpDown21";
             this.numericUpDown21.Size = new System.Drawing.Size(54, 22);
             this.numericUpDown21.TabIndex = 31;
@@ -708,7 +738,7 @@
             // 
             // numericUpDown22
             // 
-            this.numericUpDown22.Location = new System.Drawing.Point(136, 50);
+            this.numericUpDown22.Location = new System.Drawing.Point(136, 32);
             this.numericUpDown22.Name = "numericUpDown22";
             this.numericUpDown22.Size = new System.Drawing.Size(54, 22);
             this.numericUpDown22.TabIndex = 30;
@@ -719,7 +749,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.Location = new System.Drawing.Point(6, 289);
+            this.label13.Location = new System.Drawing.Point(6, 271);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(120, 20);
             this.label13.TabIndex = 26;
@@ -729,7 +759,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label14.Location = new System.Drawing.Point(6, 249);
+            this.label14.Location = new System.Drawing.Point(6, 231);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(120, 20);
             this.label14.TabIndex = 25;
@@ -739,7 +769,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.Location = new System.Drawing.Point(6, 209);
+            this.label15.Location = new System.Drawing.Point(6, 191);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(120, 20);
             this.label15.TabIndex = 24;
@@ -749,7 +779,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label16.Location = new System.Drawing.Point(6, 169);
+            this.label16.Location = new System.Drawing.Point(6, 151);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(110, 20);
             this.label16.TabIndex = 23;
@@ -759,7 +789,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.Location = new System.Drawing.Point(6, 129);
+            this.label17.Location = new System.Drawing.Point(6, 111);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(110, 20);
             this.label17.TabIndex = 22;
@@ -769,7 +799,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label18.Location = new System.Drawing.Point(6, 89);
+            this.label18.Location = new System.Drawing.Point(6, 71);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(110, 20);
             this.label18.TabIndex = 21;
@@ -779,7 +809,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label19.Location = new System.Drawing.Point(6, 49);
+            this.label19.Location = new System.Drawing.Point(6, 31);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(110, 20);
             this.label19.TabIndex = 17;
@@ -1079,6 +1109,262 @@
             this.label12.TabIndex = 33;
             this.label12.Text = "Týden 4 - Zimní cyklus";
             // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.groupBox5.Controls.Add(this.checkBox24);
+            this.groupBox5.Controls.Add(this.checkBox25);
+            this.groupBox5.Controls.Add(this.checkBox26);
+            this.groupBox5.Controls.Add(this.checkBox27);
+            this.groupBox5.Controls.Add(this.checkBox28);
+            this.groupBox5.Controls.Add(this.checkBox29);
+            this.groupBox5.Controls.Add(this.checkBox30);
+            this.groupBox5.Controls.Add(this.numericUpDown24);
+            this.groupBox5.Controls.Add(this.numericUpDown25);
+            this.groupBox5.Controls.Add(this.numericUpDown26);
+            this.groupBox5.Controls.Add(this.numericUpDown27);
+            this.groupBox5.Controls.Add(this.numericUpDown28);
+            this.groupBox5.Controls.Add(this.numericUpDown29);
+            this.groupBox5.Controls.Add(this.numericUpDown30);
+            this.groupBox5.Controls.Add(this.label26);
+            this.groupBox5.Controls.Add(this.label27);
+            this.groupBox5.Controls.Add(this.label28);
+            this.groupBox5.Controls.Add(this.label29);
+            this.groupBox5.Controls.Add(this.label30);
+            this.groupBox5.Controls.Add(this.label31);
+            this.groupBox5.Controls.Add(this.label32);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox5.Location = new System.Drawing.Point(557, 350);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(241, 259);
+            this.groupBox5.TabIndex = 34;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "MUSCLE II.VEČEŘE";
+            // 
+            // checkBox24
+            // 
+            this.checkBox24.AutoSize = true;
+            this.checkBox24.Enabled = false;
+            this.checkBox24.Location = new System.Drawing.Point(196, 24);
+            this.checkBox24.Name = "checkBox24";
+            this.checkBox24.Size = new System.Drawing.Size(15, 14);
+            this.checkBox24.TabIndex = 48;
+            this.checkBox24.Tag = "2m6000";
+            this.checkBox24.UseVisualStyleBackColor = true;
+            this.checkBox24.Visible = false;
+            // 
+            // checkBox25
+            // 
+            this.checkBox25.AutoSize = true;
+            this.checkBox25.Enabled = false;
+            this.checkBox25.Location = new System.Drawing.Point(196, 198);
+            this.checkBox25.Name = "checkBox25";
+            this.checkBox25.Size = new System.Drawing.Size(15, 14);
+            this.checkBox25.TabIndex = 47;
+            this.checkBox25.Tag = "2m11000";
+            this.checkBox25.UseVisualStyleBackColor = true;
+            this.checkBox25.Visible = false;
+            // 
+            // checkBox26
+            // 
+            this.checkBox26.AutoSize = true;
+            this.checkBox26.Enabled = false;
+            this.checkBox26.Location = new System.Drawing.Point(196, 232);
+            this.checkBox26.Name = "checkBox26";
+            this.checkBox26.Size = new System.Drawing.Size(15, 14);
+            this.checkBox26.TabIndex = 46;
+            this.checkBox26.Tag = "2m12000";
+            this.checkBox26.UseVisualStyleBackColor = true;
+            this.checkBox26.Visible = false;
+            // 
+            // checkBox27
+            // 
+            this.checkBox27.AutoSize = true;
+            this.checkBox27.Enabled = false;
+            this.checkBox27.Location = new System.Drawing.Point(196, 164);
+            this.checkBox27.Name = "checkBox27";
+            this.checkBox27.Size = new System.Drawing.Size(15, 14);
+            this.checkBox27.TabIndex = 44;
+            this.checkBox27.Tag = "2m10000";
+            this.checkBox27.UseVisualStyleBackColor = true;
+            this.checkBox27.Visible = false;
+            // 
+            // checkBox28
+            // 
+            this.checkBox28.AutoSize = true;
+            this.checkBox28.Enabled = false;
+            this.checkBox28.Location = new System.Drawing.Point(196, 128);
+            this.checkBox28.Name = "checkBox28";
+            this.checkBox28.Size = new System.Drawing.Size(15, 14);
+            this.checkBox28.TabIndex = 43;
+            this.checkBox28.Tag = "2m9000";
+            this.checkBox28.UseVisualStyleBackColor = true;
+            this.checkBox28.Visible = false;
+            // 
+            // checkBox29
+            // 
+            this.checkBox29.AutoSize = true;
+            this.checkBox29.Enabled = false;
+            this.checkBox29.Location = new System.Drawing.Point(196, 94);
+            this.checkBox29.Name = "checkBox29";
+            this.checkBox29.Size = new System.Drawing.Size(15, 14);
+            this.checkBox29.TabIndex = 42;
+            this.checkBox29.Tag = "2m8000";
+            this.checkBox29.UseVisualStyleBackColor = true;
+            this.checkBox29.Visible = false;
+            // 
+            // checkBox30
+            // 
+            this.checkBox30.AutoSize = true;
+            this.checkBox30.Enabled = false;
+            this.checkBox30.Location = new System.Drawing.Point(196, 60);
+            this.checkBox30.Name = "checkBox30";
+            this.checkBox30.Size = new System.Drawing.Size(15, 14);
+            this.checkBox30.TabIndex = 41;
+            this.checkBox30.Tag = "2m7000";
+            this.checkBox30.UseVisualStyleBackColor = true;
+            this.checkBox30.Visible = false;
+            // 
+            // numericUpDown24
+            // 
+            this.numericUpDown24.Location = new System.Drawing.Point(136, 229);
+            this.numericUpDown24.Name = "numericUpDown24";
+            this.numericUpDown24.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown24.TabIndex = 36;
+            this.numericUpDown24.Tag = "2m12000";
+            this.numericUpDown24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown25
+            // 
+            this.numericUpDown25.Location = new System.Drawing.Point(136, 195);
+            this.numericUpDown25.Name = "numericUpDown25";
+            this.numericUpDown25.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown25.TabIndex = 35;
+            this.numericUpDown25.Tag = "2m11000";
+            this.numericUpDown25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown26
+            // 
+            this.numericUpDown26.Location = new System.Drawing.Point(136, 125);
+            this.numericUpDown26.Name = "numericUpDown26";
+            this.numericUpDown26.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown26.TabIndex = 34;
+            this.numericUpDown26.Tag = "2m9000";
+            this.numericUpDown26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown27
+            // 
+            this.numericUpDown27.Location = new System.Drawing.Point(136, 160);
+            this.numericUpDown27.Name = "numericUpDown27";
+            this.numericUpDown27.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown27.TabIndex = 33;
+            this.numericUpDown27.Tag = "2m10000";
+            this.numericUpDown27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown28
+            // 
+            this.numericUpDown28.Location = new System.Drawing.Point(136, 90);
+            this.numericUpDown28.Name = "numericUpDown28";
+            this.numericUpDown28.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown28.TabIndex = 32;
+            this.numericUpDown28.Tag = "2m8000";
+            this.numericUpDown28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown29
+            // 
+            this.numericUpDown29.Location = new System.Drawing.Point(136, 55);
+            this.numericUpDown29.Name = "numericUpDown29";
+            this.numericUpDown29.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown29.TabIndex = 31;
+            this.numericUpDown29.Tag = "2m7000";
+            this.numericUpDown29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDown30
+            // 
+            this.numericUpDown30.Location = new System.Drawing.Point(136, 20);
+            this.numericUpDown30.Name = "numericUpDown30";
+            this.numericUpDown30.Size = new System.Drawing.Size(54, 22);
+            this.numericUpDown30.TabIndex = 30;
+            this.numericUpDown30.Tag = "2m6000";
+            this.numericUpDown30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label26.Location = new System.Drawing.Point(6, 230);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(120, 20);
+            this.label26.TabIndex = 26;
+            this.label26.Tag = "2m12000";
+            this.label26.Text = "Muscle 12000";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label27.Location = new System.Drawing.Point(6, 196);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(120, 20);
+            this.label27.TabIndex = 25;
+            this.label27.Tag = "2m11000";
+            this.label27.Text = "Muscle 11000";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label28.Location = new System.Drawing.Point(6, 162);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(120, 20);
+            this.label28.TabIndex = 24;
+            this.label28.Tag = "2m10000";
+            this.label28.Text = "Muscle 10000";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label29.Location = new System.Drawing.Point(6, 125);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(110, 20);
+            this.label29.TabIndex = 23;
+            this.label29.Tag = "2m9000";
+            this.label29.Text = "Muscle 9000";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label30.Location = new System.Drawing.Point(6, 92);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(110, 20);
+            this.label30.TabIndex = 22;
+            this.label30.Tag = "2m8000";
+            this.label30.Text = "Muscle 8000";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label31.Location = new System.Drawing.Point(6, 58);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(110, 20);
+            this.label31.TabIndex = 21;
+            this.label31.Tag = "2m7000";
+            this.label31.Text = "Muscle 7000";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label32.Location = new System.Drawing.Point(6, 24);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(110, 20);
+            this.label32.TabIndex = 17;
+            this.label32.Tag = "2m6000";
+            this.label32.Text = "Muscle 6000";
+            // 
             // PrintWeek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1086,6 +1372,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(804, 611);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.gobackbut);
             this.Controls.Add(this.groupBox4);
@@ -1130,6 +1417,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1218,5 +1514,27 @@
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckBox checkBox23;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.CheckBox checkBox24;
+        private System.Windows.Forms.CheckBox checkBox25;
+        private System.Windows.Forms.CheckBox checkBox26;
+        private System.Windows.Forms.CheckBox checkBox27;
+        private System.Windows.Forms.CheckBox checkBox28;
+        private System.Windows.Forms.CheckBox checkBox29;
+        private System.Windows.Forms.CheckBox checkBox30;
+        private System.Windows.Forms.NumericUpDown numericUpDown24;
+        private System.Windows.Forms.NumericUpDown numericUpDown25;
+        private System.Windows.Forms.NumericUpDown numericUpDown26;
+        private System.Windows.Forms.NumericUpDown numericUpDown27;
+        private System.Windows.Forms.NumericUpDown numericUpDown28;
+        private System.Windows.Forms.NumericUpDown numericUpDown29;
+        private System.Windows.Forms.NumericUpDown numericUpDown30;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
     }
 }

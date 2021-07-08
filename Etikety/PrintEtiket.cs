@@ -64,9 +64,23 @@ namespace Etikety
                         pdf.Print();
                     }
                 }
+                if (item.SpecialPage == "2")
+                {
+                    if (copies < 11)
+                    {
+                        pdf.LoadFromFile(item.Path);
+                        pdf.PrintSettings.Copies = 1;
+                        pdf.Print();
+                    }
+                    else
+                    {
+                        pdf.LoadFromFile(item.Path);
+                        pdf.PrintSettings.Copies = (short)Math.Floor((double)copies / 10 +1);
+                        pdf.Print();
+                    }
 
 
-
+                }
 
 
 
