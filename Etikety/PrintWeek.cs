@@ -24,7 +24,7 @@ namespace Etikety
        
             
         
-        public PrintWeek(string cestatyden1, string pprintername, string pnazevtydne) //nacteme promennou cestatyden1 a musime ji vytvorit tady v tom formu
+        public PrintWeek(string cestatyden1, string pprintername, string pnazevtydne) //nactu promennou cestatyden1 a musim ji vytvorit tady v tom formu
         {
             printername = pprintername;
             cesta = cestatyden1;

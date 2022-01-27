@@ -35,6 +35,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.NoveBut = new System.Windows.Forms.Button();
             SummerBut = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +43,7 @@
             // SummerBut
             // 
             SummerBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            SummerBut.Location = new System.Drawing.Point(251, 203);
+            SummerBut.Location = new System.Drawing.Point(251, 117);
             SummerBut.Name = "SummerBut";
             SummerBut.Size = new System.Drawing.Size(303, 48);
             SummerBut.TabIndex = 0;
@@ -53,7 +54,7 @@
             // WinterBut
             // 
             this.WinterBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.WinterBut.Location = new System.Drawing.Point(251, 287);
+            this.WinterBut.Location = new System.Drawing.Point(251, 196);
             this.WinterBut.Name = "WinterBut";
             this.WinterBut.Size = new System.Drawing.Size(303, 48);
             this.WinterBut.TabIndex = 1;
@@ -97,12 +98,24 @@
             this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
             this.toolStripComboBox1.Click += new System.EventHandler(this.toolStripComboBox1_Click);
             // 
+            // NoveBut
+            // 
+            this.NoveBut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NoveBut.Location = new System.Drawing.Point(251, 281);
+            this.NoveBut.Name = "NoveBut";
+            this.NoveBut.Size = new System.Drawing.Size(303, 48);
+            this.NoveBut.TabIndex = 4;
+            this.NoveBut.Text = "Nové";
+            this.NoveBut.UseVisualStyleBackColor = true;
+            this.NoveBut.Click += new System.EventHandler(this.NoveBut_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Etikety.Properties.Resources.jFFM_logo_FB_uprava;
             this.ClientSize = new System.Drawing.Size(804, 611);
+            this.Controls.Add(this.NoveBut);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.WinterBut);
             this.Controls.Add(SummerBut);
@@ -129,6 +142,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.Button NoveBut;
     }
 }
 

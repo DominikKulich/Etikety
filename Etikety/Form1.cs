@@ -86,5 +86,12 @@ namespace Etikety
         {
             Application.Exit();
         }
+
+        private void NoveBut_Click(object sender, EventArgs e)
+        {
+            NoveWeekForm nwf = new NoveWeekForm(NactiNazevTiskarny());
+            this.Hide();
+            nwf.ShowDialog();
+        }
     }
 }
